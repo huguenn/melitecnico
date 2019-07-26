@@ -1,0 +1,96 @@
+// MOBILE FIRST PAGE
+
+.result-item {
+    padding: 16px 0;
+    margin: 0;
+    color: $color_1;
+    text-decoration: none;
+    &:after {
+        display: inline-block;
+        margin: 16px 8px 0;
+        background-color: $background_gray;
+        height: 1px;
+        width: calc(100% - 16px);
+        content: " ";
+    }
+
+    &:last-of-type {
+        &:after {
+            display: none;
+        }
+    }
+
+    .image-container {
+        width: 130px;
+        .item-image {
+            border-radius: 4px;
+            width: 100%;
+        }
+    }
+
+    .info-container {
+        width: calc(100% - 130px);
+        display: inline-block;
+        margin: 0;
+        padding: 16px 16px 0;
+        .price {
+            font-size: 24px;
+            padding-bottom: 4px;
+            display: block;
+            .nav-icon-shipping {
+                font-size: 18px;
+                margin-left: 4px;
+                &:before {
+                    content: "";
+                    vertical-align: initial;
+                    background: url("../assets/ic_shipping2x.png") no-repeat;
+                    height: 18px;
+                    width: 18px;
+                    background-size: cover;
+                }
+            }
+            [class^="nav-icon-"] {
+                span {
+                    display: none;
+                }
+                &:before {
+                    display: inline-block;
+                }
+            }
+        }
+
+        .location {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 12px;
+            color: $color_2;
+        }
+
+        .title {
+            font-size: 18px;
+        }
+    }
+
+    @media screen and (min-width: 678px) {
+        .image-container {
+            width: 180px;
+            .item-image {
+                height: 180px;
+            }
+        }
+
+        .info-container {
+            width: calc(100% - 180px);
+            .price {
+                display: inline-block;
+                padding-bottom: 32px;
+            }
+
+            .location {
+                display: inline-block;
+                float: right;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

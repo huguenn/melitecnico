@@ -1,0 +1,11 @@
+@import "components/resultItem";
+
+#resultsPage {
+    padding: 0 15px;
+    margin: 16px 0 0;
+    .results-container {
+        background: white;
+        margin: 0 auto;
+        padding: 0 16px;
+    }
+}

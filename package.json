@@ -1,0 +1,42 @@
+{
+    "name": "meli",
+    "version": "1.0.0",
+    "author": "Gonzalo Martinez Prieto",
+    "description": "Meli Practico",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "webpack",
+        "dev-server": "webpack-dev-server --port 3000",
+        "start": "nodemon server/index.js"
+    },
+    "dependencies": {
+        "axios": "^0.18.0",
+        "babel-core": "^6.26.3",
+        "babel-loader": "^7.0.0",
+        "babel-plugin-transform-class-properties": "^6.24.1",
+        "babel-plugin-transform-object-rest-spread": "^6.26.0",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-react": "^6.24.1",
+        "bootstrap-4-grid": "^2.4.1",
+        "css-loader": "^1.0.1",
+        "express": "^4.16.4",
+        "history": "^4.7.2",
+        "material-ui": "^0.20.2",
+        "node-sass": "^4.9.4",
+        "query-string": "^6.2.0",
+        "querystring": "^0.2.0",
+        "react": "^16.6.0",
+        "react-dom": "^16.6.0",
+        "react-router-dom": "^4.3.1",
+        "sass-loader": "^7.1.0",
+        "style-loader": "^0.23.1",
+        "webpack": "^4.23.1",
+        "webpack-dev-server": "^3.1.10"
+    },
+    "devDependencies": {
+        "file-loader": "^2.0.0",
+        "webpack-cli": "^3.1.2",
+        "webpack-dev-middleware": "^3.4.0"
+    }
+}
