@@ -1,7 +1,7 @@
 var path = require("path");
 module.exports = {
     entry: "./src/app.js",
-    mode: "development",
+    mode: "production",
     output: {
         path: path.join(__dirname, "public"),
         filename: "bundle.js", // this is the compiled final javascript file which we will include in the index.html
