@@ -9,7 +9,6 @@
         "build": "webpack",
         "dev-server": "webpack-dev-server --port 3000",
         "prestart": "react-scripts build",
-        "prestart2": "npm i file-loader",
         "start": "node server/index.js"
     },
     "dependencies": {
