@@ -8,7 +8,6 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "webpack",
         "dev-server": "webpack-dev-server --port 3000",
-        "prestart": "npm install file-loader --save-dev",
         "start": "node server/index.js"
     },
     "dependencies": {
